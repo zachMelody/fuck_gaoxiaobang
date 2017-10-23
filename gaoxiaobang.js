@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         高校助手
+// @name        高校助手
 // @namespace    http://www.pyblog.xyz:233/
-// @version      1.0
+// @version      1.1
 // @description  try to take over the world!
 // @author       zachMelody
 // @match        https://shfc.class.gaoxiaobang.com/*
@@ -12,12 +12,21 @@
     'use strict';
     //等待页面加载完毕后，监测标题，判断是否跳过
     window.setTimeout(function(){
+       /* 1.0判断方式
         var b =  document.getElementsByClassName("chapter-title");
         var c = b[0].innerHTML;
         if(c.indexOf("讲")>-1){
             console.log("Success!");
         }else{
             var a = document.getElementsByClassName("chapter-next");
+            a[0].click();
+        }
+        */
+        var a = document.getElementsByClassName('name');
+        if (a.length >= 1){
+            console.log("Success!");
+        }else{
+            var b = document.getElementsByClassName("chapter-next");
             a[0].click();
         }
         window.setInterval(function(){
