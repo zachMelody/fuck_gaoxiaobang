@@ -27,7 +27,7 @@
             console.log("Success!");
         }else{
             var b = document.getElementsByClassName("chapter-next");
-            a[0].click();
+            b[0].click();
         }
         window.setInterval(function(){
             //查找是否有问题弹出
