@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        高校助手
 // @namespace    http://www.pyblog.xyz:233/
-// @version      1.1
+// @version      1.2
 // @description  try to take over the world!
 // @author       zachMelody
 // @match        https://shfc.class.gaoxiaobang.com/*
